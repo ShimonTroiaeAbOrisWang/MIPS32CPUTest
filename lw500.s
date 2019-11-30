@@ -5,16 +5,20 @@
 
 __start:
 	nop
-    	
+	
+	
+	lui $11, 0x8000
+	ori $11, $11, 4 
+    nop
 	addiu $8, $0, 500
 	nop
 	nop
 	nop
-	sw $8, 0x3000($0)
+	sw $8, 0($11)
 	nop
 	nop
 	nop
-	lw $9, 0x3000($0)
+	lw $9, 0x0($11)
 	nop
 	nop
 	nop
