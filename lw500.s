@@ -7,7 +7,7 @@ __start:
 	nop
 	
 	
-	lui $11, 0x8000
+	lui $11, 0x8040
 	ori $11, $11, 4 
     nop
 	addiu $8, $0, 500
