@@ -11,11 +11,14 @@ __start:
 	lui $11, 0x8040
 	ori $11, $11, 4 	
 	nop
-	addiu $8, $0, 9
+	nop
+	lui $8, 0x8384
+	ori $8, $8, 0x8586
 	nop
 	nop
 	nop
 	sb $8, 0($11)
+	nop
 	nop
 	nop
 	nop
